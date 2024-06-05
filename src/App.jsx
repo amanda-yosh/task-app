@@ -1,17 +1,10 @@
 import React from "react"
 
-import { Header } from "./components/Header"
-
-import { Button } from "./components/Button"
+import { Input, Header, Button, Task, TitleCounter, NoTasks, TrackBar } from "./components"
 
 import styles from "./App.module.css"
 
 import "./global.css"
-import { Input } from "./components/Input"
-import { Task } from "./components/Task"
-import { TitleCounter } from "./components/TitleCounter"
-import { NoTasks } from "./components/NoTasks"
-import { TrackBar } from "./components/TrackBar"
 
 function App() {
     const [tasks, setTasks] = React.useState([
