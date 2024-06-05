@@ -1,0 +1,26 @@
+.titleCounter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.counter {
+    background-color: var(--gray-400);
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .titleCounter {
+        padding: 0 1rem;
+    }
+}

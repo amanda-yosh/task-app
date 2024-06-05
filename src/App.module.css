@@ -1,0 +1,51 @@
+.wrapper {
+    max-width: 736px;
+    margin: 0 auto 4rem;
+}
+
+.addTasks {
+    margin-top: -1.8rem;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.tasksTitleCounter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.trackBar {
+    margin: 0.5rem 0 2rem 0;
+}
+
+.mainTasks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .addTasks {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .tasksTitleCounter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tasksTitleCounter div:first-child {
+        display: none;
+    }
+
+    .trackBar,
+    .mainTasks {
+        padding: 0 1rem;
+    }
+}

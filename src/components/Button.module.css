@@ -1,0 +1,30 @@
+.button {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--gray-100);
+    font-weight: 700;
+    background-color: var(--blue-dark);
+}
+
+.button:hover {
+    background-color: var(--blue);
+}
+
+.buttonIcon {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+}
+
+.buttonIcon:hover {
+    background-color: var(--danger);
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: fit-content;
+    }
+}

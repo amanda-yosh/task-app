@@ -1,0 +1,25 @@
+.input {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.input:hover {
+    background-color: rgb(78, 168, 222, 0.2);
+}
+
+.input:checked {
+    background-color: var(--purple-dark);
+    border-color: var(--purple-dark);
+}
+
+.input:checked:hover {
+    background-color: var(--purple);
+    border-color: var(--purple);
+} 
