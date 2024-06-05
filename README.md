@@ -1,4 +1,4 @@
-# To do APP with Vite and React + JS
+# ToDo APP with Vite and React + JS
 
 Aplicação de controle de tarefas com as seguintes funcionalidades:
 
