@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Button.module.css'
 
 export function Button({ text, iconPath, onClick }) {
@@ -10,4 +12,10 @@ export function Button({ text, iconPath, onClick }) {
             {iconPath ? <img src={iconPath} alt="Ícone do botão" width={16} height={16} /> : '+'}
         </button>
     )
+}
+
+Button.propTypes = {
+    text: PropTypes.string,
+    iconPath: PropTypes.string,
+    onClick: PropTypes.func.isRequired,
 }

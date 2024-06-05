@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import styles from './Input.module.css'
 
 export function Input({ onChange, value }) {
@@ -11,4 +12,9 @@ export function Input({ onChange, value }) {
             value={value}
         />
     )
+}
+
+Input.propTypes = {
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
 }

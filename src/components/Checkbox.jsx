@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './Checkbox.module.css';
 
@@ -20,4 +21,9 @@ export function Checkbox({ checked, onClickCheckbox }) {
             onChange={handleOnChange}
         />
     )
+}
+
+Checkbox.propTypes = {
+    checked: PropTypes.bool.isRequired,
+    onClickCheckbox: PropTypes.func.isRequired,
 }

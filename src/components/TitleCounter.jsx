@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './TitleCounter.module.css'
 
 export function TitleCounter({ title, counter, colorVariant, checked }) {
@@ -7,4 +9,11 @@ export function TitleCounter({ title, counter, colorVariant, checked }) {
             <p className={styles.counter}>{checked ? `${checked} de ${counter}` : counter}</p>
         </div>
     )
+}
+
+TitleCounter.propTypes = {
+    title: PropTypes.string.isRequired,
+    counter: PropTypes.number.isRequired,
+    colorVariant: PropTypes.string.isRequired,
+    checked: PropTypes.number,
 }

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './TrackBar.module.css';
 
 export function TrackBar({ total, track }) {
@@ -9,4 +11,9 @@ export function TrackBar({ total, track }) {
             />
         </div>
     )
+}
+
+TrackBar.propTypes = {
+    total: PropTypes.number.isRequired,
+    track: PropTypes.number.isRequired,
 }
