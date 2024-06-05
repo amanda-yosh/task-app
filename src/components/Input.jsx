@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import styles from './Input.module.css'
+import PropTypes from "prop-types"
+import styles from "./Input.module.css"
 
 export function Input({ onChange, value }) {
     return (

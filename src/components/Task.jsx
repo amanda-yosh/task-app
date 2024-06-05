@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import { Checkbox } from './Checkbox'
-import { Button } from './Button'
+import { Checkbox } from "./Checkbox"
+import { Button } from "./Button"
 
-import styles from './Task.module.css'
+import styles from "./Task.module.css"
 
-import trashCan from '../assets/trash-can.svg';
+import trashCan from "../assets/trash-can.svg";
 
 export function Task({ checked, text, onDeleteTask }) {
     const handleOnDeleteTask = () => {
@@ -15,7 +15,7 @@ export function Task({ checked, text, onDeleteTask }) {
     return (
         <div className={styles.task}>
             <Checkbox checked={checked} />
-            <p className={checked ? styles.checked : ''}>{text}</p>
+            <p className={checked ? styles.checked : ""}>{text}</p>
             <Button iconPath={trashCan} onClick={handleOnDeleteTask} />
         </div>
     )

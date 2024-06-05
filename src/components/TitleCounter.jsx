@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import styles from './TitleCounter.module.css'
+import styles from "./TitleCounter.module.css"
 
 export function TitleCounter({ title, counter, colorVariant, checked }) {
     return (

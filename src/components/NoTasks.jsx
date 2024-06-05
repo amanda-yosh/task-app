@@ -1,6 +1,6 @@
-import list from '../assets/list.svg';
+import list from "../assets/list.svg";
 
-import styles from './NoTasks.module.css';
+import styles from "./NoTasks.module.css";
 
 export function NoTasks() {
     return (

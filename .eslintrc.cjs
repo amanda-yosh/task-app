@@ -17,5 +17,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    quotes: ["error", "double"],
+    'eol-last': ["error", "always"],
+    'max-len': ["error", { "code": 100 }],
+    'object-curly-spacing': ["error", "always"],
+    'indent': ["error", 4]
   },
 }

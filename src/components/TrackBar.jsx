@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import styles from './TrackBar.module.css';
+import styles from "./TrackBar.module.css";
 
 export function TrackBar({ total, track }) {
     return (

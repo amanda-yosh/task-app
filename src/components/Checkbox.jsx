@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styles from './Checkbox.module.css';
+import styles from "./Checkbox.module.css";
 
 export function Checkbox({ checked, onClickCheckbox }) {
     const [value, setValue] = React.useState(checked)
