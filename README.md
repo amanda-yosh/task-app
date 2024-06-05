@@ -15,3 +15,8 @@ Conceitos revisados:
 - css modules
 - estado
 - programacao imperativa (dizemos as software o que deve ser feito) x declarativa (usamos essa no React, ao invés do passo a passo, declaro o resultado esperado e as condições para este resultado)
+- quando um componente é renderizado novamente?
+    - alteração de estado
+    - alteração de propriedade
+    - quando um componente pai renderiza novamente
+- comunicacao entre componentes apenas através das propriedades -> passagem de funções

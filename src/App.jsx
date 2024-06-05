@@ -16,22 +16,27 @@ import { TrackBar } from "./components/TrackBar"
 function App() {
   const [tasks, setTasks] = React.useState([
     {
+      id: 1,
       checked: true,
       text: 'Estudar CSS'
     },
     {
+      id: 2,
       checked: false,
       text: 'Estudar JavaScript'
     },
     {
+      id: 3,
       checked: false,
       text: 'Estudar React'
     },
     {
+      id: 4,
       checked: true,
       text: 'Estudar Node'
     },
     {
+      id: 5,
       checked: false,
       text: 'Estudar TypeScript'
     }
@@ -59,6 +64,10 @@ function App() {
     setNewTask(event.target.value)
   }
 
+  const handleDeleteTask = (task) => {
+    setTasks(tasks.filter(taskItem => taskItem.id !== task.id))
+  }
+
   return (
     <div>
       <Header />
@@ -80,9 +89,14 @@ function App() {
         {hasTasks
           ? (
             <div className={styles.mainTasks}>
-              {tasks.map((task, index) => {
+              {tasks.map((task) => {
                 return (
-                  <Task key={task.text + index} checked={task.checked} text={task.text} />
+                  <Task
+                    key={task.text + task.id}
+                    checked={task.checked}
+                    text={task.text}
+                    onDeleteTask={() => handleDeleteTask(task)}
+                  />
                 )
               })}
             </div>
