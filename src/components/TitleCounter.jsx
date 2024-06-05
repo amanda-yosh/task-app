@@ -15,5 +15,5 @@ TitleCounter.propTypes = {
     title: PropTypes.string.isRequired,
     counter: PropTypes.number.isRequired,
     colorVariant: PropTypes.string.isRequired,
-    checked: PropTypes.number,
+    checked: PropTypes.string,
 }

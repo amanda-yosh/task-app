@@ -1,14 +1,10 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 import styles from "./Checkbox.module.css";
 
-export function Checkbox({ checked, onClickCheckbox }) {
-    const [value, setValue] = React.useState(checked)
-
+export function Checkbox({ checked, onChange }) {
     const handleOnChange = () => {
-        setValue(!value)
-        onClickCheckbox()
+        onChange()
     }
 
     return (
@@ -16,7 +12,7 @@ export function Checkbox({ checked, onClickCheckbox }) {
             id="checkbox"
             type="checkbox"
             name="checkbox"
-            checked={value}
+            checked={checked}
             className={styles.input}
             onChange={handleOnChange}
         />
@@ -25,5 +21,5 @@ export function Checkbox({ checked, onClickCheckbox }) {
 
 Checkbox.propTypes = {
     checked: PropTypes.bool.isRequired,
-    onClickCheckbox: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
 }

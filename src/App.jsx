@@ -61,6 +61,16 @@ function App() {
         setTasks(tasks.filter(taskItem => taskItem.id !== task.id))
     }
 
+    const handleMarkTask = (task) => {
+        setTasks(tasks.map(taskItem => {
+            if (taskItem.id === task.id) {
+                taskItem.checked = !taskItem.checked
+            }
+
+            return taskItem
+        }))
+    }
+
     return (
         <div>
             <Header />
@@ -75,7 +85,7 @@ function App() {
                     <TitleCounter
                         title="Concluídas"
                         counter={counter}
-                        checked={checkedCounter}
+                        checked={checkedCounter.toString()}
                         colorVariant='purple'
                     />
                 </div>
@@ -93,6 +103,7 @@ function App() {
                                         key={task.text + task.id}
                                         checked={task.checked}
                                         text={task.text}
+                                        onMarkTask={() => handleMarkTask(task)}
                                         onDeleteTask={() => handleDeleteTask(task)}
                                     />
                                 )

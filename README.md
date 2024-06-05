@@ -23,3 +23,4 @@ Conceitos revisados:
 - diferença entre PropTypes e TypeScript
     - o PropTypes exibe consoles de erro apenas em runtime do lado do browser
     - o TypeScript exibe qualquer erro em tempo de compilação
+- variavel! -> ! confia que existe

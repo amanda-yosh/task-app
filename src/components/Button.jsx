@@ -19,5 +19,5 @@ export function Button({ text, iconPath, onClick }) {
 Button.propTypes = {
     text: PropTypes.string,
     iconPath: PropTypes.string,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
 }
