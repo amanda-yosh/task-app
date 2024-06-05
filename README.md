@@ -2,9 +2,9 @@
 
 Aplicação de controle de tarefas com as seguintes funcionalidades:
 
-- [ ] Adicionar uma nova tarefa
-- [ ] Marcar e desmarcar uma tarefa como concluída
-- [ ] Remover uma tarefa da listagem
+- [X] Adicionar uma nova tarefa
+- [X] Marcar e desmarcar uma tarefa como concluída
+- [X] Remover uma tarefa da listagem
 - [X] Mostrar o progresso de conclusão das tarefas
 
 [Figma da aplicação](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate)
